@@ -13,3 +13,14 @@ def find_the_duplicate(nums):
         >>> find_the_duplicate([2, 1, 3, 4]) is None
         True
     """
+    old = 0
+    sorted_list = sorted(nums)
+    print(sorted_list)
+    for i in sorted_list:
+        if (i == old):
+            return i
+        old = i
+    return True
+        
+
+print(find_the_duplicate([2, 1, 3, 4]))
