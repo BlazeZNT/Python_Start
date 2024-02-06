@@ -22,3 +22,7 @@ def valid_parentheses(parens):
         >>> valid_parentheses(")()(")
         False
     """
+    new_list = list(parens)
+    return (new_list.count("(") == new_list.count(")"))
+    
+print(valid_parentheses("((())"))
