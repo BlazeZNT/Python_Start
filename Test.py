@@ -13,3 +13,7 @@
 #     print(new_num)
     
 # add_num(2,5)
+
+file = open("write.txt","w")
+file.write("This is a new line that I just wrote")
+file.close()
