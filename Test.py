@@ -14,6 +14,6 @@
     
 # add_num(2,5)
 
-file = open("write.txt","w")
-file.write("This is a new line that I just wrote")
+file = open("Piano.txt","w")
+file.write("Sinatra")
 file.close()
