@@ -17,3 +17,37 @@
 file = open("Piano.txt","w")
 file.write("Sinatra")
 file.close()
+
+from collections import Counter
+
+my_counter = Counter("HELLO")
+
+print(my_counter)
+print(my_counter.most_common())
+
+from datetime import date
+from math import sqrt
+
+my_date = date(1999,2,14)
+# help(my_date)
+
+
+class Triangle:
+    def __init__(self,a,b):
+        self.a = a
+        self.b = b
+    
+    def get_hypotenuse(self):
+        return sqrt(self.a **2 + self.b **2)
+    
+    def get_area(self):
+        return self.a*self.b/2
+
+        
+t = Triangle(4,5)
+
+print(t)
+        
+    
+        
+    
