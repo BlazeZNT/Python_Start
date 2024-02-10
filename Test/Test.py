@@ -14,23 +14,23 @@
     
 # add_num(2,5)
 
-file = open("Piano.txt","w")
-file.write("Sinatra")
-file.close()
+# file = open("Piano.txt","w")
+# file.write("Sinatra")
+# file.close()
 
-from collections import Counter
+# from collections import Counter
 
-my_counter = Counter("HELLO")
+# my_counter = Counter("HELLO")
 
-print(my_counter)
-print(my_counter.most_common())
+# print(my_counter)
+# print(my_counter.most_common())
 
 from datetime import date
 from math import sqrt
 from random import randint
 
-my_date = date(1999,2,14)
-# help(my_date)
+# my_date = date(1999,2,14)
+# # help(my_date)
 
 
 class Triangle:
@@ -47,11 +47,11 @@ class Triangle:
     
     def get_area(self):
         return self.a*self.b/2
+    
+    def describe(self):
+        return f"I am a triangle with sides {self.a} and {self.b}"
 
         
-t = Triangle(4,5)
-
-print(t)
         
     
         
