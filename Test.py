@@ -27,6 +27,7 @@ print(my_counter.most_common())
 
 from datetime import date
 from math import sqrt
+from random import randint
 
 my_date = date(1999,2,14)
 # help(my_date)
@@ -36,6 +37,10 @@ class Triangle:
     def __init__(self,a,b):
         self.a = a
         self.b = b
+        
+    @classmethod
+    def random(cls):
+        return cls(randint(1,20),randint(1,20))
     
     def get_hypotenuse(self):
         return sqrt(self.a **2 + self.b **2)
